@@ -1,7 +1,7 @@
 .offshadow{
     &::after{
         content: '';
-        position: absolute;
+        position: fixed;
         background-color: black;
         opacity: .5;
         inset: 0 0 0 0;
