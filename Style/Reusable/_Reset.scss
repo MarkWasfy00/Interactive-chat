@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $Very-light-gray;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    min-width: 3rem;
+}
+
+
+[contenteditable="true"]{
+    border: 1px $Moderate-blue solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    caret-color: $Moderate-blue;
+}
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+  border: 1px $Moderate-blue solid;
+  border-radius: 1rem;
+  outline:none;
+}
+
+
+::selection{
+    color: white;
+    background-color: $Moderate-blue;
+}
+
+.disabled{
+    cursor: auto !important;
+    color: $Light-grayish-blue !important;
+    
+}
+
+// ::-webkit-scrollbar{
+//     background-color: $dark;
+//     &-thumb{
+//         background-color: $blue;
+//         border-radius: .5rem;
+//     }
+// }

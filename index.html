@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive comments section</title>
+  <link rel="stylesheet" href="./Style/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css" integrity="sha512-AGmpdsTqvAh2GvTWzVhhJ9VqQb1eAXwOM7uiWtv0DzcnGaGWy98K51z2cK5OG3gp4NB1HbMaD7p0MeO9kE7E3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <main class="container animate__animated animate__backInDown ">
+    <section class="comment">
+      <div class="react">
+        <div class="vote bolder">
+          <i class='bx bx-plus' ></i>
+          <div class="count">12</div>
+          <i class='bx bx-minus disabled' ></i>
+        </div>
+      </div>
+      <div class="head">
+        <div class="info">
+          <div class="avatar">
+            <img src="./images/avatars/image-amyrobson.png" alt="avatar">
+          </div>
+          <div class="name bold">amyrobson</div>
+          <div class="date regular">1 month ago</div>
+          <div class="access-buttons">
+            <div class="reply-btn bolder">
+              <i class='bx bx-reply'></i>
+              <div>Reply</div>
+            </div>
+          </div>
+        </div>
+        <p class="content regular">
+          Impressove! Though it seems the drag feature could be
+           improved. But overall it looks increadible. You've nailed
+            the design and the responsiveness at various
+             breakpoints works really  well.
+        </p>
+      </div>
+      
+      </div>
+    </section>
+    <section class="comment">
+      <div class="react">
+        <div class="vote bolder">
+          <i class='bx bx-plus' ></i>
+          <div class="count">5</div>
+          <i class='bx bx-minus disabled' ></i>
+        </div>
+      </div>
+      <div class="head">
+        <div class="info">
+          <div class="avatar">
+            <img src="./images/avatars/image-maxblagun.png" alt="avatar">
+          </div>
+          <div class="name bold">maxblagun</div>
+          <div class="date regular">2 weeks ago</div>
+          <div class="access-buttons">
+            <div class="reply-btn bolder">
+              <i class='bx bx-reply'></i>
+              <div>Reply</div>
+            </div>
+          </div>
+        </div>
+        <p class="content regular">
+          Woah, your project looks awesome! How long have you been coding for? I'm still
+          new. but think I want to dive into React as well soon. Perhaps you can give
+          me an insight on where I can learn React? Thanks!
+        </p>
+      </div>
+    </section>
+    <section class="reply-to" reply-comment='maxblagun'>
+      <div class="line">
+        <span></span>
+      </div>
+      <div class="reply-holder">
+        <section class="comment reply-comment">
+          <div class="react">
+            <div class="vote bolder">
+              <i class='bx bx-plus' ></i>
+              <div class="count">4</div>
+              <i class='bx bx-minus disabled' ></i>
+            </div>
+          </div>
+          <div class="head">
+            <div class="info">
+              <div class="avatar">
+                <img src="./images/avatars/image-ramsesmiron.png" alt="avatar">
+              </div>
+              <div class="name bold">ramsesmiron</div>
+              <div class="date regular">1 week ago</div>
+              <div class="access-buttons">
+                <div class="reply-btn bolder">
+                  <i class='bx bx-reply'></i>
+                  <div>Reply</div>
+                </div>
+              </div>
+            </div>
+            <p class="content regular">
+              @maxblagun If you're still new, I'd recommend focusing on the
+               fundamentals of HTML, CSS, and JS before considering React.
+               It's very tempting to jump ahead but lay a solid foundation first.
+            </p>
+          </div>
+        </section>
+        <section class="comment reply-comment">
+          <div class="react">
+            <div class="vote bolder">
+              <i class='bx bx-plus disabled' ></i>
+              <div class="count">2</div>
+              <i class='bx bx-minus disabled' ></i>
+            </div>
+          </div>
+          <div class="head">
+            <div class="info">
+              <div class="avatar">
+                <img src="./images/avatars/image-juliusomo.png" alt="avatar">
+              </div>
+              <div class="name bold">juliusomo</div>
+              <div class="badge small">you</div>
+              <div class="date regular">2 days ago</div>
+              <div class="access-buttons">
+                <div class="you-section">
+                  <div class="delete bold">
+                    <i class='bx bxs-trash' ></i>
+                    <div>Delete</div>
+                  </div>
+                  <div class="edit bold">
+                    <i class='bx bxs-edit-alt' ></i>
+                    <div>Edit</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="content regular">@ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="enter-comment">
+      <div class="avatar">
+        <img src="./images/avatars/image-juliusomo.png" alt="avatar">
+      </div>
+      <textarea class="regular" id="textarea" placeholder="Add a comment..."></textarea>
+      <a class="button bold" href="#">SEND</a>
+    </section>
+  </main>
+  <script src="./Style/main.js"></script>
+</body>
+</html>

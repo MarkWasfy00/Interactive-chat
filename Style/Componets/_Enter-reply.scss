@@ -1,0 +1,58 @@
+.enter-reply{
+    background-color: white;
+    max-width: 60rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    
+
+    textarea{
+        flex-grow: 2;
+        height: 10rem;
+        width: 100%;
+        resize: none;
+        padding: 1rem;
+        border: 2px solid $border;
+        outline: none;
+        border-radius: 1rem;
+        color: $Grayish-Blue;
+        order: 1;
+        &:focus{
+            border: 1px $Moderate-blue dashed;
+        }
+        @include media(tablet){
+            width: 40rem;
+            
+        }
+    }
+    .avatar{
+        
+        width: 3rem;
+        order: 2;
+        @include media(tablet){
+            order: 1;
+            
+        }
+    }
+
+    .button{
+        width: 10rem;
+        background-color: $Moderate-blue;
+        color: white;
+        border-radius: 1rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 3;
+        transition: 500ms;
+        &:hover{
+            background-color: lighten($Moderate-blue, 15%);
+        }
+    }
+    
+}
+
